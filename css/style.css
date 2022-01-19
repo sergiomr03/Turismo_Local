@@ -1,0 +1,181 @@
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 13px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    font-size: 15px;
+    color: black;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+
+/*.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+*/
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 60%;
+    float: left;
+}
+
+.column-fot {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 15%;
+    float: left;
+    text-align: left;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    position: fixed;
+}
+
+.column-nav a {
+    text-decoration: none;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+    margin-left: 25%;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+
+/* Otras clases */
+
+
+/*img {
+    width: 100%;
+}
+*/
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 100vh;
+    background-image: url(../img/ashim-d-silva-pGcqw1ARGyg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-1 {
+    background-image: url(../img/panoramica-barcelona-e1633523374971.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-2 {
+    background-image: url(../img/marrakech3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-3 {
+    background-image: url(../img/Andorra.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+#card-4 {
+    background-image: url(../img/sofia-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.padding-s {
+    padding: 3%;
+}
+
+article {
+    background-color: rgb(277, 277, 227);
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    .column-nav {
+        width: 100%;
+        height: 40vh;
+        position: relative;
+    }
+    .column-75 {
+        width: 100%;
+        margin-left: 0%;
+    }
+}
